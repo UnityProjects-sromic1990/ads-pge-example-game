@@ -1,0 +1,13 @@
+framework module UnityPge {
+  umbrella header "UnityPge.h"
+
+  header "UPGEAlternative.h"
+  header "UPGEAnswer.h"
+  header "UPGEJsonStorage.h"
+  header "UPGEMetaData.h"
+  header "UPGEQuestion.h"
+  header "UPGEInitializeOptions.h"
+
+  export *
+  module * { export * }
+}
