@@ -11,7 +11,7 @@ Now you git clone should get the LFS files properly. For support of LFS in Git G
 
 ## Setup
 
-- Developed and tested on Unity 2018.2.20f1
+- Developed and tested on Unity **2018.2.20f1**
 - For code styles `brew install uncrustify` -> `./scripts/codestyles.sh`
 - For building and running on device
     - Add Bundle identifier in Player Settings
