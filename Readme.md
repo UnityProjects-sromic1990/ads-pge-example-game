@@ -15,7 +15,7 @@ Now you git clone should get the LFS files properly. For support of LFS in Git G
 - For code styles `brew install uncrustify` -> `./scripts/codestyles.sh`
 - For building and running on device
     - Add Bundle identifier in Player Settings
-    - To make Unity Ads work add iOS and Android Dame IDs to PackageInitializer in Start scene
+    - To make Unity Ads work add iOS and Android Game IDs to PackageInitializer in Start scene
     - To make Unity Pge work add Unity Project ID to PackageInitializer in Start scene
 
 ## Branch details
