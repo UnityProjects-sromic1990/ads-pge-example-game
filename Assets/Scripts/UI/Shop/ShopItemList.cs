@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PersonalizedGaming;
 #if UNITY_ANALYTICS
 using UnityEngine.Analytics;
 #endif
@@ -85,6 +86,15 @@ public class ShopItemList : ShopList
         PlayerData.instance.premium -= c.GetPremiumCost();
         PlayerData.instance.Add(c.GetConsumableType());
         PlayerData.instance.Save();
+
+        PersonalizedGaming.SetUserAttributes(PlayerData.instance.GetUserAttributesForPge());
+        PersonalizedGaming.RewardEvent("item_bought", new Dictionary<string, object>()
+        {
+            { "name", c.GetConsumableName() },
+            { "category", "consumable" },
+            { "cost", c.GetPremiumCost() },
+            { "premium_cost", c.GetPremiumCost() }
+        });
 
 #if UNITY_ANALYTICS // Using Analytics Standard Events v0.3.0
         var transactionId = System.Guid.NewGuid().ToString();
