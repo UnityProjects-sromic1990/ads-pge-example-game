@@ -26,3 +26,7 @@ Contents:
 - Trash Dash game 
 - UnityAds 3.0.1 package and integration
 - UnityPge package
+
+## PGE info
+
+[PGE documentation](http://docs.pge.unityads.unity3d.com/#personalized-gaming-experience-pge)
