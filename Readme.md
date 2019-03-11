@@ -25,7 +25,7 @@ This branch is cloned and slightly modified version of [EndlessRunnerSampleGame]
 Contents:
 - Trash Dash game 
 - UnityAds 3.0.1 package and integration
-- UnityPge package
+- UnityPge 1.7.1 package
 
 ## PGE info
 
